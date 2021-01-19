@@ -1,4 +1,5 @@
 #header-container {
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -16,7 +17,7 @@
           flex-flow: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: black;
+  background: #252a2d;
   background-image: url("../img/home-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -70,10 +71,11 @@ nav {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .navbar-right li a:focus {
-  color: red;
+  color: #d5625f;
 }
 
 .jumbotron-impact {
@@ -90,6 +92,11 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  position: absolute;
+  top: 47%;
+  left: 49%;
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
   height: 200px;
   color: white;
 }
@@ -99,14 +106,22 @@ nav {
 }
 
 .jumbotron-impact p {
+  font-weight: 300;
   padding: 20px 0;
 }
 
 .jumbotron-impact button {
   padding: 0.8rem 1.2rem;
   background: transparent;
-  color: white;
+  color: #aeafae;
   text-transform: uppercase;
+  border: 1px solid #aeafae;
+  outline: none;
+  cursor: pointer;
+}
+
+.jumbotron-impact button:hover {
+  color: #d5625f;
 }
 
 * {
@@ -114,5 +129,9 @@ nav {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
