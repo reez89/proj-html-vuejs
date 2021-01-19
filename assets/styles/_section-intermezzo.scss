@@ -1,0 +1,39 @@
+.intermezzo {
+    @include flexCenter(center, center, column);
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    padding: 0px;
+    background: $backgroundSharkLight;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    h2 {
+        color: $textColorWhite;
+    }
+
+    img {
+        padding: $paddingY_40;
+    }
+
+    p {
+        width: 35%;
+        text-align: center;
+        line-height: 30px;
+        color: $textColorGray;
+    }
+}
+
+.intermezzo:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: $backgroundSharkLight transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -15px;
+    left: 50%;
+}

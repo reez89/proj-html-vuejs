@@ -1,5 +1,6 @@
 @import './variables';
 @import './header';
+@import './section-intermezzo';
 
 
 * {
@@ -10,4 +11,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+@mixin flexCenter($justifyMode, $alignMode, $flow) {
+    display: flex;
+    align-items: $alignMode;
+    justify-content: $justifyMode;
+    flex-flow: $flow;
 }
