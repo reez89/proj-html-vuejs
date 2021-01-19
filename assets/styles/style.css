@@ -1,3 +1,4 @@
+/* IMPORT FILES */
 #header-container {
   position: relative;
   height: 100vh;
@@ -20,6 +21,7 @@
   background: #252a2d;
   background-image: url("../img/home-banner.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -61,6 +63,10 @@ nav {
           flex-flow: row-reverse;
 }
 
+.navbar-right ul li:first-child a {
+  color: #d5625f;
+}
+
 .navbar-right li {
   list-style: none;
   display: inline-block;
@@ -74,7 +80,7 @@ nav {
   cursor: pointer;
 }
 
-.navbar-right li a:focus {
+.navbar-right li a:hover {
   color: #d5625f;
 }
 
@@ -174,6 +180,8 @@ nav {
   left: 50%;
 }
 
+/* XXX IMPORT FILES */
+/* CLASSI COMUNI */
 * {
   margin: 0;
   padding: 0;
@@ -185,4 +193,6 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
+
+/* XXX CLASSI COMUNI */
 /*# sourceMappingURL=style.css.map */

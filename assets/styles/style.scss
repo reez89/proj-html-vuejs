@@ -1,7 +1,10 @@
+/* IMPORT FILES */
 @import './variables';
 @import './header';
 @import './section-intermezzo';
+/* XXX IMPORT FILES */
 
+/* CLASSI COMUNI */
 
 * {
     margin: 0;
@@ -20,3 +23,5 @@ body {
     justify-content: $justifyMode;
     flex-flow: $flow;
 }
+
+/* XXX CLASSI COMUNI */

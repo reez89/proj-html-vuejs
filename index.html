@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- VUEJS -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">        
@@ -14,30 +16,16 @@
     </head>
         <body>
             <div id="app">
+                <!-- HEADER -->
                 <div id="header-container">
                     <header class="jumbotron">
                         <nav class="navbar-left">
-                            <img src="./assets/img/gym_logo_1x.png" alt="">
+                            <img :src="headerImage" alt="">
                         </nav>
                         <nav class="navbar-right">
                             <ul>
-                                <li>
-                                    <a href="#">HOME</a> 
-                                </li>
-                                <li>
-                                    <a href="#">ABOUT US</a> 
-                                </li>
-                                <li>
-                                    <a href="#">FACILITIES</a> 
-                                </li>
-                                <li>
-                                    <a href="#">MEMBERSHIP</a> 
-                                </li>
-                                <li>
-                                    <a href="#">TESTIMONIALS</a> 
-                                </li>
-                                <li>
-                                    <a href="#">BLOG</a> 
+                                <li v-for="link in navLinks">
+                                    <a href="#">{{link.link}}</a> 
                                 </li>
                             </ul>
                         </nav>
@@ -48,11 +36,20 @@
                         <button>Join us today</button>
                     </div>
                 </div>
+                <!-- xxx HEADER -->
+                <!-- INTERMEZZO -->
                 <div class="intermezzo">
                     <h2>WORLD CLASS Fitness</h2>
                     <img src="./assets/img/divider-xx-red.png" alt="">
                     <p>At Avada gym, everything we do from top to bottom is of the highest quality to ensure we're euquipped to help you reach your goals of a healthy and fit lifestyle.</p>
                 </div>
+                 <!-- xxx INTERMEZZO -->
             </div>
+
+
+
+
+
+            <script src="./assets/js/main.js"></script>
         </body>
 </html>
