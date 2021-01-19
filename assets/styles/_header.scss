@@ -59,12 +59,19 @@ nav {
     @include flexCenter(center, center, column);
     height: 200px;
     color: $textColorWhite;
-}
 
-.jumbotron-impact h1 {
-    font-size: 5rem;
-}
+    h1 {
+        font-size: 5rem;
+    }
 
-.jumbotron-impact p {
-    padding: $paddingY;
+    p {
+        padding: $paddingY;
+    }
+
+    button {
+        padding: 0.8rem 1.2rem;
+        background: transparent;
+        color: $textColorWhite;
+        text-transform: uppercase;
+    }
 }

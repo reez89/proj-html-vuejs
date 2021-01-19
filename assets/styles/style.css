@@ -102,6 +102,13 @@ nav {
   padding: 20px 0;
 }
 
+.jumbotron-impact button {
+  padding: 0.8rem 1.2rem;
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
