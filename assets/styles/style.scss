@@ -9,6 +9,7 @@
 @import './intermezzo-motivational';
 @import './meet-our-trainers-section';
 @import './performance-news-section';
+@import './achieve-your-fitness-goals-section';
 /* XXX IMPORT FILES */
 
 /* CLASSI COMUNI */
@@ -38,11 +39,9 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row;
     flex-wrap: wrap;
-
-
 }
 
 /* XXX CLASSI COMUNI */

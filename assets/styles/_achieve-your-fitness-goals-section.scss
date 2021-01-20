@@ -1,0 +1,38 @@
+#achieve-your-fitness-goals {
+    @include flexCenter(center, center, row);
+    width: 100vw;
+    height: 200px;
+    background-image: url('../img/home-parallax.jpg');
+    background-position: 50% 20%;
+
+    button {
+        color: $textColorGray;
+        text-transform: uppercase;
+        padding: 0.5rem 1.2rem;
+        background: transparent;
+        outline: none;
+        border: 1px solid $textColorGray;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: $textColorWhite;
+        border: 1px solid $textColorWhite;
+    }
+}
+
+.text-info-goals {
+    @include flexCenter(space-between, right, column);
+    width: 50%;
+    color: $textColorWhite;
+
+    p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+}
+
+.join-us {
+    @include flexCenter(space-between, center, column);
+    width: 50%;
+}

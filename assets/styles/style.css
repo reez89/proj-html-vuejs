@@ -660,6 +660,7 @@ nav {
       flex-wrap: wrap;
   width: 100vw;
   background: #252a2d;
+  padding-bottom: 3rem;
 }
 
 #performance-news button {
@@ -700,6 +701,81 @@ nav {
   width: 250px;
 }
 
+#achieve-your-fitness-goals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 100vw;
+  height: 200px;
+  background-image: url("../img/home-parallax.jpg");
+  background-position: 50% 20%;
+}
+
+#achieve-your-fitness-goals button {
+  color: #aeafae;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid #aeafae;
+}
+
+#achieve-your-fitness-goals button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.text-info-goals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 50%;
+  color: white;
+}
+
+.text-info-goals p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.join-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 50%;
+}
+
 /* XXX IMPORT FILES */
 /* CLASSI COMUNI */
 * {
@@ -723,9 +799,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
