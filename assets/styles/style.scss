@@ -18,13 +18,27 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+
 }
+
 
 @mixin flexCenter($justifyMode, $alignMode, $flow) {
     display: flex;
     align-items: $alignMode;
     justify-content: $justifyMode;
     flex-flow: $flow;
+}
+
+.main-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+
 }
 
 /* XXX CLASSI COMUNI */

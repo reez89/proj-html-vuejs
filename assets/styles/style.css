@@ -225,16 +225,14 @@ nav {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
   width: 400px;
   height: 222px;
-  margin-left: 2rem;
   color: white;
 }
 
@@ -297,7 +295,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  width: calc(100% / 8);
+  width: calc(100% / 4);
 }
 
 .activity-card i {
@@ -358,12 +356,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -374,17 +373,18 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  width: calc(100% / 4);
+  width: calc(100% / 2 - 4rem);
+  margin: 1rem;
   background: #212425;
   padding: 2.5rem;
 }
@@ -406,6 +406,26 @@ nav {
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+}
+
+.main-container {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* XXX CLASSI COMUNI */

@@ -38,56 +38,63 @@
                 </div>
                 <!-- xxx HEADER -->
                 <!-- INTERMEZZO -->
-                <div class="intermezzo">
-                    <h2>WORLD CLASS Fitness</h2>
-                    <img src="./assets/img/divider-xx-red.png" alt="">
-                    <p>At Avada gym, everything we do from top to bottom is of the highest quality to ensure we're euquipped to help you reach your goals of a healthy and fit lifestyle.</p>
-                </div>
-                 <!-- xxx INTERMEZZO -->
-                <!-- SIGN UP SECTION -->
-                <section id="form-section">
-                    <div class="img-form">
-                        <img :src="formImage" alt="ragazza con tenuta sportiva e ragazzo con pesi">
+                
+                    <div class="intermezzo">
+                        <h2>WORLD CLASS Fitness</h2>
+                        <img src="./assets/img/divider-xx-red.png" alt="">
+                        <p>At Avada gym, everything we do from top to bottom is of the highest quality to ensure we're euquipped to help you reach your goals of a healthy and fit lifestyle.</p>
                     </div>
-                    <div class="form-data-info">
-                        <h4>sign up for a free training session!</h4>
-                        <span>name</span>
-                        <input type="text">
-                        <span>email</span>
-                        <input type="text">
-                        <button type="submit">start now!</button>
-                    </div>
-                </section>
-                 <!-- xxx SIGN UP SECTION -->
-                 <!-- ACTIVITY TYPE SECTION -->
-                 <section id="activity-section">
-                    <div class="activity-card" v-for="item in activityCards">
-                        <i :class=item.icon></i>
-                        <img :src="item.img" alt="">
-                        <p>{{item.text}}</p>
-                    </div>
-                 </section>
-                 <!-- xxx ACTIVITY TYPE SECTION -->
-                 <!-- REAL WORLD RESULTS SECTION -->
-                 <section id="world-results">
-                     <div class="world-title">
-                         <h2>REAL WORLD RESULTS</h2>
-                         <img src="./assets/img/divider-xx-red.png" alt="">
-                     </div>
-                     <div class="total-cards">
-                         <div class="card-container" v-for="item in worldResults">
-                             <div class="card-img">
-                                 <img :src="item.img" alt="">
-                             </div>
-                             <div class="card-info">
-                                 <p>{{item.txt}}</p>
-                                 <p>{{item.author}}</p>
+                     <!-- xxx INTERMEZZO -->
+                    <!-- SIGN UP SECTION -->
+                    <section id="form-section" >
+                        <div class="main-container">
+                            <div class="img-form">
+                                <img :src="formImage" alt="ragazza con tenuta sportiva e ragazzo con pesi">
+                            </div>
+                            <div class="form-data-info">
+                                <h4>sign up for a free training session!</h4>
+                                <span>name</span>
+                                <input type="text">
+                                <span>email</span>
+                                <input type="text">
+                                <button type="submit">start now!</button>
+                            </div>
+                        </div>
+                    </section>
+                     <!-- xxx SIGN UP SECTION -->
+                     <!-- ACTIVITY TYPE SECTION -->
+                     <section id="activity-section">
+                         <div class="main-container">
+                            <div class="activity-card" v-for="item in activityCards">
+                                <i :class=item.icon></i>
+                                <img :src="item.img" alt="">
+                                <p>{{item.text}}</p>
+                            </div>
+                        </div>
+                     </section>
+                     <!-- xxx ACTIVITY TYPE SECTION -->
+                     <!-- REAL WORLD RESULTS SECTION -->
+                     <section id="world-results">
+                         <div class="world-title">
+                             <h2>REAL WORLD RESULTS</h2>
+                             <img src="./assets/img/divider-xx-red.png" alt="">
+                         </div>
+                         <div class="total-cards main-container">
+                             <div class="card-container" v-for="item in worldResults">
+                                 <div class="card-img">
+                                     <img :src="item.img" alt="">
+                                 </div>
+                                 <div class="card-info">
+                                     <p>{{item.txt}}</p>
+                                     <p>{{item.author}}</p>
+                                 </div>
                              </div>
                          </div>
-                     </div>
-                 </section>
-                 <!-- xxx REAL WORLD RESULTS SECTION -->
-                 
+                     </section>
+                     <!-- xxx REAL WORLD RESULTS SECTION -->
+                     
+
+      
 
 
 

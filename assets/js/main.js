@@ -52,12 +52,12 @@ let app = new Vue({
                 author:`– Tara Smith`
             },
             {
-                img:`./assets/img/review_2-compressor.jpg`,
+                img:`./assets/img/review_3-compressor-2.jpg`,
                 txt:`“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”`,
                 author:`– Simon Chel`
             },
             {
-                img:`./assets/img/review_3-compressor-2.jpg`,
+                img:`./assets/img/review_2-compressor.jpg`,
                 txt:`“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”`,
                 author:`– Jen Wirth`
             },

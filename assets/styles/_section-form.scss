@@ -20,10 +20,9 @@
 }
 
 .form-data-info {
-    @include flexCenter(space-between, none, column);
+    @include flexCenter(space-around, none, column);
     width: 400px;
     height: 222px;
-    margin-left: 2rem;
     color: $textColorWhite;
 
 

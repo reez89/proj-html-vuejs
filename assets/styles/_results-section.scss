@@ -19,15 +19,16 @@
 }
 
 .total-cards {
-    @include flexCenter(space-around, center, column);
+    @include flexCenter(none, center, row);
     flex-wrap: wrap;
     width: 100%;
     height: 500px;
 }
 
 .card-container {
-    @include flexCenter(center, none, row);
-    width: calc(100% / 4);
+    @include flexCenter(space-between, center, row);
+    width: calc(100% / 2 - 4rem);
+    margin: 1rem;
     background: $backgroundSharkLight;
     padding: 2.5rem;
 }
