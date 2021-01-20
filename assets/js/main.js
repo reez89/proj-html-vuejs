@@ -1,6 +1,8 @@
 let app = new Vue({
     el: '#app',
     data:{
+        highPerformanceTitle:'high performance facilities',
+        divider:'./assets/img/divider-xx-red.png',
         headerImage: './assets/img/gym_logo_1x.png',
         formImage:'./assets/img/home_img-compressor-400x222.jpg',
         navLinks:[
@@ -66,6 +68,27 @@ let app = new Vue({
                 txt:`“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”`,
                 author:`– Jeff Glum`
             },
+        ],
+        highPerformance:[
+            {
+                img:`./assets/img/home-image1.jpg`,
+            },
+            {
+                img:`./assets/img/home-image2.jpg`,
+            },
+            {
+                img:`./assets/img/home-image3.jpg`,
+            },
+            {
+                img:`./assets/img/home-image4.jpg`,
+            },
+            {
+                img:`./assets/img/home-image54.jpg`,
+            },
+            {
+                img:`./assets/img/home-image6.jpg`,
+            },
         ]
+
     }
 })

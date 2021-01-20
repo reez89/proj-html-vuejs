@@ -1,0 +1,30 @@
+#high-performance-results {
+    width: 100vw;
+    @include flexCenter(center, center, column);
+    background: $backgroundShark;
+}
+
+.performance-title {
+    @include flexCenter(center, center, column);
+
+    h2 {
+        color: $textColorWhite;
+        text-transform: uppercase;
+    }
+
+    img {
+        padding: 1rem;
+    }
+}
+
+.total-image {
+    @include flexCenter(center, center, row);
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.high-performance-img {
+    @include flexCenter(center, center, row);
+    margin: 6rem;
+    width: calc(100% / 6);
+}
