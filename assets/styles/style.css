@@ -541,11 +541,28 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   width: 100vw;
   padding-bottom: 3rem;
   background: #212425;
   border-radius: 0px;
+}
+
+#meet-our-trainers button {
+  color: #aeafae;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid #aeafae;
+}
+
+#meet-our-trainers button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
 }
 
 #meet-our-trainers:after {
@@ -563,7 +580,7 @@ nav {
 
 .trainers-title {
   text-align: center;
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 
 .trainers-title h2 {

@@ -1,5 +1,6 @@
 #meet-our-trainers {
     @include flexCenter(center, center, column);
+    flex-wrap: wrap;
     position: relative;
     width: 100vw;
     padding-bottom: 3rem;
@@ -7,6 +8,21 @@
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+
+    button {
+        color: $textColorGray;
+        text-transform: uppercase;
+        padding: 0.5rem 1.2rem;
+        background: transparent;
+        outline: none;
+        border: 1px solid $textColorGray;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: $textColorWhite;
+        border: 1px solid $textColorWhite;
+    }
 }
 
 #meet-our-trainers:after {
@@ -24,7 +40,7 @@
 
 .trainers-title {
     text-align: center;
-    padding: 3rem 0;
+    padding-top: 3rem;
 
     h2 {
         text-transform: uppercase;
