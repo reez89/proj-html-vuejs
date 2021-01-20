@@ -23,5 +23,27 @@ let app = new Vue({
                 link: 'blog'
             }
         ],
+        activityCards:[
+            {
+                icon:`fas fa-unlink`,
+                img:'./assets/img/divider-x-red.png',
+                text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
+            },
+            {
+                icon:`fas fa-bicycle`,
+                img:'./assets/img/divider-x-red.png',
+                text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
+            },
+            {
+                icon:`fab fa-skyatlas`,
+                img:'./assets/img/divider-x-red.png',
+                text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
+            },
+            {
+                icon:`fas fa-heartbeat`,
+                img:'./assets/img/divider-x-red.png',
+                text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
+            }
+        ]
     }
 })

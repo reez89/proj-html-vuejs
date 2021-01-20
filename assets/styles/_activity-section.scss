@@ -1,0 +1,30 @@
+#activity-section {
+    @include flexCenter(center, center, row);
+    width: 100vw;
+    height: 400px;
+    background-image: url('../img/gym_bkgd_bw-compressor.jpg');
+    background-position: center;
+}
+
+.activity-card {
+    @include flexCenter(center, center, column);
+    width: calc(100% / 8);
+
+    i {
+        color: $textColorRose;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        border: 1px solid $textColorRose;
+        border-radius: 50%;
+    }
+
+    img {
+        padding: 1.5rem;
+    }
+
+    p {
+        color: $textColorGray;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+}
