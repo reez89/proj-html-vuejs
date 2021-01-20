@@ -3,6 +3,9 @@ let app = new Vue({
     data:{
         highPerformanceTitle:'high performance facilities',
         divider:'./assets/img/divider-xx-red.png',
+        dividerWhite:'./assets/img/divider-white-xx.png',
+        motivational:`“ I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times ”`,
+        quoteOfTheDay:`BRUCE LEE • QUOTE OF THE DAY`,
         headerImage: './assets/img/gym_logo_1x.png',
         formImage:'./assets/img/home_img-compressor-400x222.jpg',
         navLinks:[

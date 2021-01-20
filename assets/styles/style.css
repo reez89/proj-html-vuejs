@@ -472,8 +472,59 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  margin: 6rem;
+  margin: 5.9rem;
   width: calc(100% / 6);
+}
+
+#intermezzo-motivational {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100vw;
+  height: 400px;
+  background-image: url("../img/home-testimonial-bg.jpg");
+  background-position: 50% 41.8%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.motivationl-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  width: 35%;
+  color: white;
+}
+
+.motivationl-text h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+.motivationl-text img {
+  padding: 2rem 0;
 }
 
 /* XXX IMPORT FILES */
