@@ -607,8 +607,12 @@ nav {
       -ms-flex-flow: column;
           flex-flow: column;
   margin: 2rem;
-  width: 200px;
+  width: 250px;
   background: #252a2d;
+}
+
+.trainer-img img {
+  width: 250px;
 }
 
 .trainer-info {
@@ -636,6 +640,64 @@ nav {
 
 .name-profession p:nth-child(2) {
   font-size: 0.8rem;
+}
+
+#performance-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  background: #252a2d;
+}
+
+#performance-news button {
+  color: #aeafae;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid #aeafae;
+}
+
+#performance-news button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.performer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 2rem;
+  width: 250px;
+  background: #212425;
+}
+
+.performer-img img {
+  width: 250px;
 }
 
 /* XXX IMPORT FILES */

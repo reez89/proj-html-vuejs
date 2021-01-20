@@ -7,6 +7,7 @@ let app = new Vue({
         motivational:`“ I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times ”`,
         quoteOfTheDay:`BRUCE LEE • QUOTE OF THE DAY`,
         trainersTitle:`meet our trainers`,
+        performersTitle: `performace news`,
         headerImage: './assets/img/gym_logo_1x.png',
         formImage:'./assets/img/home_img-compressor-400x222.jpg',
         navLinks:[
@@ -121,7 +122,38 @@ let app = new Vue({
                 twitter:`fab fa-twitter`,
                 instagram:`fab fa-instagram`
             },
+        ],
+        performanceCard:[
+            {   
+                img:'./assets/img/blog1-200x104.jpg',
+                title:'Train with free weights or your body weight?',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
+            {
+                img:'./assets/img/blog6-200x200.jpg',
+                title:'Nutritional advice that will keep you training',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
+            {
+                img:'./assets/img/trainer4-200x148.jpg',
+                title:'Simple principles for your next workout',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
+            {
+                img:'./assets/img/blog4-200x144.jpg',
+                title:'To be number one, train like you’re number two',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
+            {
+                img:'./assets/img/trainer3-200x148.jpg',
+                title:'Top 5 mistakes every gym member makes',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
+            {
+                img:'./assets/img/trainer1-200x148.jpg',
+                title:'The myths of shedding body fat explored',
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
+            },
         ]
-
     }
 })

@@ -144,6 +144,30 @@
                             <button type="submit">view all trainers</button>
                      </section>
                      <!-- xxx MEET OUR TRAINERS SECTION -->
+                     <!-- PERFORMANCE NEWS SECTION -->
+                        <section id="performance-news">
+                            <div class="trainers-title">
+                                <h2>{{performersTitle}}</h2>
+                                <img :src="divider" alt="">
+                            </div>
+                            <div class="performes-card main-container">
+                                <div class="performer-card" v-for="item in performanceCard">
+                                    <div class="performer-img">
+                                        <img :src="item.img" alt="">
+                                    </div>
+                                    <div class="perform-info">
+                                        <div class="name-profession">
+                                            <p>{{item.title}}</p>
+                                        </div>
+                                        <div class="description">
+                                            <p>{{item.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit">read all articles</button>
+                        </section>
+                     <!-- xxx PERFORMANCE NEWS SECTION -->
                      
 
       

@@ -1,0 +1,35 @@
+#performance-news {
+    @include flexCenter(center, center, column);
+    flex-wrap: wrap;
+    width: 100vw;
+    background: $backgroundShark;
+
+    button {
+        color: $textColorGray;
+        text-transform: uppercase;
+        padding: 0.5rem 1.2rem;
+        background: transparent;
+        outline: none;
+        border: 1px solid $textColorGray;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: $textColorWhite;
+        border: 1px solid $textColorWhite;
+    }
+}
+
+
+.performer-card {
+    @include flexCenter(space-evenly, center, column);
+    margin: 2rem;
+    width: 250px;
+    background: $backgroundSharkLight;
+}
+
+.performer-img {
+    img {
+        width: 250px;
+    }
+}

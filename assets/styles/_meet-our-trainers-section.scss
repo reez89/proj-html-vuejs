@@ -55,10 +55,15 @@
 .trainer-card {
     @include flexCenter(space-between, center, column);
     margin: 2rem;
-    width: 200px;
+    width: 250px;
     background: $backgroundShark;
 }
 
+.trainer-img {
+    img {
+        width: 250px;
+    }
+}
 
 .trainer-info {
     padding: 1.2rem;
