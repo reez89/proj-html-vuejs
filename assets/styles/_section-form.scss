@@ -1,0 +1,57 @@
+#form-section {
+    @include flexCenter(center, center, none);
+    width: 100vw;
+    height: 400px;
+    background: $backgroundSharkLight;
+
+    .img-form {
+        overflow: hidden;
+
+        img {
+            transition: transform .4s;
+        }
+    }
+
+    .img-form:hover img {
+        cursor: pointer;
+        transform: scale(1.2);
+        transform-origin: 50% 50%;
+    }
+}
+
+.form-data-info {
+    @include flexCenter(space-between, none, column);
+    width: 400px;
+    height: 222px;
+    margin-left: 2rem;
+    color: $textColorWhite;
+
+
+    h4 {
+
+        text-transform: capitalize;
+    }
+
+    span {
+        color: $textColorGray;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    input {
+        background: transparent;
+        outline: none;
+        border: 1 px solid white;
+        padding: 0.5rem;
+    }
+
+    button {
+        background: $textColorRose;
+        padding: 1rem 0;
+        border: none;
+        color: $textColorWhite;
+        text-transform: uppercase;
+    }
+
+
+}
