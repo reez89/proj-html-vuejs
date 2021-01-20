@@ -6,6 +6,7 @@ let app = new Vue({
         dividerWhite:'./assets/img/divider-white-xx.png',
         motivational:`“ I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times ”`,
         quoteOfTheDay:`BRUCE LEE • QUOTE OF THE DAY`,
+        trainersTitle:`meet our trainers`,
         headerImage: './assets/img/gym_logo_1x.png',
         formImage:'./assets/img/home_img-compressor-400x222.jpg',
         navLinks:[
@@ -90,6 +91,35 @@ let app = new Vue({
             },
             {
                 img:`./assets/img/home-image6.jpg`,
+            },
+        ],
+        trainersCard:[
+            {
+                img:`./assets/img/trainer1-200x148.jpg`,
+                name:`Ann baker`,
+                profession:`Personal Trainer`,
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.`,
+                facebook:`fab fa-facebook-f`,
+                twitter:`fab fa-twitter`,
+                instagram:`fab fa-instagram`
+            },
+            {
+                img:`./assets/img/trainer3-200x148.jpg`,
+                name:`Anne Warren`,
+                profession:`Personal Trainer`,
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.`,
+                facebook:`fab fa-facebook-f`,
+                twitter:`fab fa-twitter`,
+                instagram:`fab fa-instagramfab fa-instagram`
+            },
+            {
+                img:`./assets/img/trainer4-200x148.jpg`,
+                name:`Peter Rice`,
+                profession:`Personal Trainer`,
+                description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.`,
+                facebook:`fab fa-facebook-f`,
+                twitter:`fab fa-twitter`,
+                instagram:`fab fa-instagram`
             },
         ]
 

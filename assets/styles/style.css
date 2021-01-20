@@ -527,6 +527,100 @@ nav {
   padding: 2rem 0;
 }
 
+#meet-our-trainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+  width: 100vw;
+  padding-bottom: 3rem;
+  background: #212425;
+  border-radius: 0px;
+}
+
+#meet-our-trainers:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  border-color: #212425 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 50%;
+}
+
+.trainers-title {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.trainers-title h2 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.trainers-title img {
+  padding: 2rem 0;
+}
+
+.trainer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 2rem;
+  width: 200px;
+  background: #252a2d;
+}
+
+.trainer-info {
+  padding: 1.2rem;
+}
+
+.trainer-info i {
+  color: white;
+  background: #212425;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.description {
+  margin: 3rem 0;
+  color: #aeafae;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.name-profession {
+  color: white;
+}
+
+.name-profession p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
 /* XXX IMPORT FILES */
 /* CLASSI COMUNI */
 * {

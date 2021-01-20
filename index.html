@@ -116,6 +116,33 @@
                         </div>
                      </section>
                      <!-- xxx INTERMEZZO MOTIVATIONAL SECTION -->
+                     <!-- MEET OUR TRAINERS SECTION -->
+                     <section id="meet-our-trainers">
+                         <div class="trainers-title">
+                             <h2>{{trainersTitle}}</h2>
+                             <img :src="divider" alt="">
+                         </div>
+                         <div class="trainers-card main-container">
+                             <div class="trainer-card" v-for="item in trainersCard">
+                                 <div class="trainer-img">
+                                     <img :src="item.img" alt="">
+                                 </div>
+                                 <div class="trainer-info">
+                                     <div class="name-profession">
+                                         <p>{{item.name}}</p>
+                                         <p>{{item.profession}}</p>
+                                     </div>
+                                     <div class="description">
+                                         <p>{{item.description}}</p>
+                                     </div>
+                                     <i :class=item.facebook></i>
+                                     <i :class=item.twitter></i>
+                                     <i :class=item.instagram></i>
+                                    </div>
+                             </div>
+                         </div>
+                     </section>
+                     <!-- xxx MEET OUR TRAINERS SECTION -->
                      
 
       

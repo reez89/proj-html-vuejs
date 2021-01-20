@@ -1,0 +1,72 @@
+#meet-our-trainers {
+    @include flexCenter(center, center, column);
+    position: relative;
+    width: 100vw;
+    padding-bottom: 3rem;
+    background: $backgroundSharkLight;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+#meet-our-trainers:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: $backgroundSharkLight transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -15px;
+    left: 50%;
+}
+
+.trainers-title {
+    text-align: center;
+    padding: 3rem 0;
+
+    h2 {
+        text-transform: uppercase;
+        color: $textColorWhite;
+    }
+
+    img {
+        padding: 2rem 0;
+    }
+}
+
+.trainer-card {
+    @include flexCenter(space-between, center, column);
+    margin: 2rem;
+    width: 200px;
+    background: $backgroundShark;
+}
+
+
+.trainer-info {
+    padding: 1.2rem;
+
+    i {
+        color: white;
+        background: $backgroundSharkLight;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+.description {
+    margin: 3rem 0;
+    color: $textColorGray;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.name-profession {
+    color: $textColorWhite;
+
+    p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+}
