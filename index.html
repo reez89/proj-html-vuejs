@@ -68,6 +68,25 @@
                     </div>
                  </section>
                  <!-- xxx ACTIVITY TYPE SECTION -->
+                 <!-- REAL WORLD RESULTS SECTION -->
+                 <section id="world-results">
+                     <div class="world-title">
+                         <h2>REAL WORLD RESULTS</h2>
+                         <img src="./assets/img/divider-xx-red.png" alt="">
+                     </div>
+                     <div class="total-cards">
+                         <div class="card-container" v-for="item in worldResults">
+                             <div class="card-img">
+                                 <img :src="item.img" alt="">
+                             </div>
+                             <div class="card-info">
+                                 <p>{{item.txt}}</p>
+                                 <p>{{item.author}}</p>
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+                 <!-- xxx REAL WORLD RESULTS SECTION -->
                  
 
 
