@@ -154,6 +154,36 @@ let app = new Vue({
                 title:'The myths of shedding body fat explored',
                 description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, tortor vitae porttitor suscipit, sapien purus aliquet risus, eu finibus arcu ante nec risus. [...]`
             },
+        ],
+        /* footer */
+        comeFindUs:[
+            {
+                street: `12345 north main street`,
+                state: `new york,NY 555555`,
+                phone:`phone: 1.800555.6789`,
+                email: ` email: info@your-domain.com`
+            }
+        ],
+        recentPosts:[
+            {
+                training: `train with free weights or your body weight?`,
+                nutrition: ` nutritional advice that will keep you training`,
+            }
+        ],
+        openingTimes:[
+            {
+                scheduleOne: `Weekdays Monday-Friday`,
+                hourOne: `09:00 - 19:00`,
+                scheduleTwo: `Weekends Saturday-Sunday`,
+                hourTwo: `09:00 - 21:00`
+            }
+        ],
+
+        footerImg:[
+            {
+                image: `./assets/img/gym_ad-compressor-200x133.jpg`,
+            }
         ]
+        
     }
 })

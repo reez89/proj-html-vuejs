@@ -776,6 +776,147 @@ nav {
   width: 50%;
 }
 
+#footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-flow: column !important;
+          flex-flow: column !important;
+  width: 100vw;
+  height: 400px;
+  background: #212425;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.come-find-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: calc(100% / 4);
+}
+
+.come-find-us p {
+  color: #aeafae;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.come-find-us p:first-child {
+  padding-bottom: 1.5rem;
+  color: #7e8995;
+  text-transform: uppercase;
+}
+
+.recent-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: calc(100% / 4);
+  height: 144px;
+}
+
+.recent-posts p {
+  color: #aeafae;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.recent-title {
+  padding-bottom: 1.5rem !important;
+  color: #7e8995 !important;
+  text-transform: uppercase !important;
+}
+
+.recent-top,
+.recent-bottom {
+  width: 75%;
+  border-bottom: 1px solid #aeafae;
+}
+
+.recent-top p i,
+.recent-bottom p i {
+  font-size: 10px;
+}
+
+.opening-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: calc(100% / 4);
+}
+
+.opening-time p {
+  color: #aeafae;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.opening-time p:first-child {
+  padding-bottom: 1.5rem;
+  color: #7e8995;
+  text-transform: uppercase;
+}
+
+.footer-img {
+  width: calc(100% / 4);
+}
+
 /* XXX IMPORT FILES */
 /* CLASSI COMUNI */
 * {

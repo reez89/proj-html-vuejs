@@ -1,0 +1,84 @@
+#footer-top {
+    @include flexCenter(space-around !important, center !important, column !important);
+    width: 100vw;
+    height: 400px;
+    background: $backgroundSharkLight;
+}
+
+.footer-info {
+    @include flexCenter(center, center, column);
+}
+
+.come-find-us {
+    @include flexCenter(center, none, column);
+    width: calc(100% / 4);
+
+    p {
+        color: $textColorGray;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+
+    }
+
+    p:first-child {
+        padding-bottom: 1.5rem;
+        color: $textColorRegentGray;
+        text-transform: uppercase;
+    }
+}
+
+.recent-posts {
+    @include flexCenter(none, none, column);
+    width: calc(100% / 4);
+    height: 144px;
+
+    p {
+        color: $textColorGray;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.recent-title {
+    padding-bottom: 1.5rem !important;
+    color: $textColorRegentGray !important;
+    text-transform: uppercase !important;
+
+}
+
+.recent-top,
+.recent-bottom {
+    width: 75%;
+    border-bottom: 1px solid $textColorGray;
+
+    p {
+        i {
+            font-size: 10px;
+        }
+    }
+}
+
+.opening-time {
+    @include flexCenter(none, none, column);
+    width: calc(100% / 4);
+
+    p {
+        color: $textColorGray;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    p:first-child {
+        padding-bottom: 1.5rem;
+        color: $textColorRegentGray;
+        text-transform: uppercase;
+    }
+}
+
+.footer-img {
+    width: calc(100% / 4);
+}

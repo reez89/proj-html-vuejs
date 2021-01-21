@@ -181,6 +181,40 @@
                             </div>
                         </section>
                      <!-- xxx ACHIVE YOU GOALS SECTIONS -->
+                     <!-- FOOTER -->
+                     <footer id="footer-top">
+                        <div class="footer-info main-container">
+                            <div class="come-find-us" v-for="text in comeFindUs">
+                                <p>Come find us</p>
+                                <p>{{text.street}}</p>
+                                <p>{{text.state}}</p> 
+                                <p>{{text.phone}}</p> 
+                                <p>{{text.email}}</p>
+                            </div> 
+                            <div class="recent-posts" v-for="post in recentPosts">
+                                <p class="recent-title">recent posts</p>
+                                <div class="recent-top">
+                                    <p><i class="fas fa-chevron-right"></i>{{post.training}}</p>
+                                </div>
+                                <div class="recent-bottom">
+                                    <p><i class="fas fa-chevron-right"></i>{{post.nutrition}}</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="opening-time" v-for="time in openingTimes">
+                                <p>onening time</p>
+                                <p>{{time.scheduleOne}}</p>
+                                <p>{{time.hourOne}}</p>
+                                <p>{{time.scheduleTwo}}</p>
+                                <p>{{time.hourTwo}}</p>
+                            </div>
+                            <div class="footer-img" v-for="image in footerImg">
+                                <img :src="image.image" alt="">
+                            </div>
+                        </div>
+                     </footer>
+                     <!-- xxx FOOTER -->
                      
 
       
