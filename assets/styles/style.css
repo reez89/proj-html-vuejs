@@ -830,6 +830,7 @@ nav {
 .come-find-us p {
   color: #aeafae;
   text-transform: capitalize;
+  font-weight: 300;
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
@@ -862,6 +863,7 @@ nav {
   color: #aeafae;
   text-transform: capitalize;
   font-size: 0.8rem;
+  font-weight: 300;
   line-height: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -904,6 +906,7 @@ nav {
   color: #aeafae;
   text-transform: capitalize;
   font-size: 0.8rem;
+  font-weight: 300;
   line-height: 1.5rem;
 }
 
@@ -913,8 +916,78 @@ nav {
   text-transform: uppercase;
 }
 
+.opening-time p:nth-child(3) {
+  color: #899696;
+}
+
+.opening-time p:nth-child(5) {
+  color: #899696;
+}
+
 .footer-img {
   width: calc(100% / 4);
+}
+
+.credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100vw;
+  height: 100px;
+  background: #070809;
+}
+
+.credits-txt,
+.credits-social {
+  width: 50%;
+}
+
+.credits-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.credits-txt p {
+  font-size: 0.7rem;
+  color: #aeafae;
+  text-transform: capitalize;
+}
+
+.p-right {
+  padding-right: 5px;
+}
+
+.border {
+  border-left: 1px solid #aeafae;
+  padding: 0 5px;
+}
+
+.credits-socials i {
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.5rem;
+  background: #d5625f;
 }
 
 /* XXX IMPORT FILES */

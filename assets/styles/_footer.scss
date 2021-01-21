@@ -16,6 +16,7 @@
     p {
         color: $textColorGray;
         text-transform: capitalize;
+        font-weight: 300;
         font-size: 0.8rem;
         line-height: 1.5rem;
 
@@ -37,6 +38,7 @@
         color: $textColorGray;
         text-transform: capitalize;
         font-size: 0.8rem;
+        font-weight: 300;
         line-height: 1.5rem;
         padding-bottom: 1.5rem;
     }
@@ -69,6 +71,7 @@
         color: $textColorGray;
         text-transform: capitalize;
         font-size: 0.8rem;
+        font-weight: 300;
         line-height: 1.5rem;
     }
 
@@ -76,6 +79,14 @@
         padding-bottom: 1.5rem;
         color: $textColorRegentGray;
         text-transform: uppercase;
+    }
+
+    p:nth-child(3) {
+        color: $textColorOsloGray;
+    }
+
+    p:nth-child(5) {
+        color: $textColorOsloGray;
     }
 }
 

@@ -1,0 +1,41 @@
+.credits {
+    @include flexCenter(space-between, center, column);
+    width: 100vw;
+    height: 100px;
+    background: #070809;
+}
+
+.credits-txt,
+.credits-social {
+    width: 50%;
+}
+
+.credits-txt {
+    @include flexCenter(none, none, row);
+
+    p {
+        font-size: 0.7rem;
+        color: $textColorGray;
+        text-transform: capitalize;
+    }
+
+}
+
+.p-right {
+    padding-right: 5px;
+}
+
+.border {
+    border-left: 1px solid $textColorGray;
+    padding: 0 5px;
+}
+
+.credits-socials {
+    i {
+        font-size: 0.8rem;
+        color: $textColorWhite;
+        padding: 0.5rem;
+        background: $textColorRose;
+
+    }
+}
