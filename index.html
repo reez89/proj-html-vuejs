@@ -66,9 +66,16 @@
                      <section id="activity-section">
                          <div class="main-container">
                             <div class="activity-card" v-for="item in activityCards">
-                                <i :class=item.icon></i>
+                                <div class="activity-icon">
+                                    <i :class=item.icon></i>
+                                </div>
+                                <div class="activity-title">
+                                    <p>{{item.activity}}</p>
+                                </div>
                                 <img :src="item.img" alt="">
-                                <p>{{item.text}}</p>
+                                <div class="activity-info">
+                                    <p>{{item.text}}</p>
+                                </div>
                             </div>
                         </div>
                      </section>

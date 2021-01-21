@@ -33,21 +33,25 @@ let app = new Vue({
         activityCards:[
             {
                 icon:`fas fa-unlink`,
+                activity: `Strength & Conditioning`,
                 img:'./assets/img/divider-x-red.png',
                 text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
             },
             {
                 icon:`fas fa-bicycle`,
+                activity: `Fitness & Cardio`,
                 img:'./assets/img/divider-x-red.png',
                 text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
             },
             {
                 icon:`fab fa-skyatlas`,
+                activity: `Flexibility & Rest`,
                 img:'./assets/img/divider-x-red.png',
                 text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
             },
             {
                 icon:`fas fa-heartbeat`,
+                activity: `Health & Diet`,
                 img:'./assets/img/divider-x-red.png',
                 text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
             }
