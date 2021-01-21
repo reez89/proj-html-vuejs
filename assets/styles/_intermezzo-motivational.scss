@@ -13,6 +13,9 @@
     text-align: center;
     width: 35%;
     color: $textColorWhite;
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 
     h2 {
         font-size: 2rem;
@@ -23,4 +26,9 @@
     img {
         padding: 2rem 0;
     }
+}
+
+
+.motivationl-text.is-visible {
+    opacity: 1;
 }

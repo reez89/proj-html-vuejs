@@ -6,6 +6,9 @@
 
     .img-form {
         overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.3s .25s ease-out;
+        will-change: opacity;
 
         img {
             transition: transform .4s;
@@ -19,12 +22,24 @@
     }
 }
 
+.img-form.is-visible {
+    opacity: 1 !important;
+}
+
+
+.form-info {
+    @include flexCenter(space-around !important, none, row)
+}
+
 .form-data-info {
     @include flexCenter(space-around, none, column);
     width: 400px;
     height: 222px;
     color: $textColorWhite;
     margin: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 
     h4 {
 
@@ -40,7 +55,7 @@
     input {
         background: transparent;
         outline: none;
-        border: 1 px solid white;
+        border: 1px solid $textColorRegentGray;
         padding: 0.5rem;
     }
 
@@ -54,4 +69,8 @@
     }
 
 
+}
+
+.form-data-info.is-visible {
+    opacity: 1 !important;
 }

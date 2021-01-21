@@ -13,21 +13,27 @@ let app = new Vue({
         navLinks:[
             {
                 link : 'home',
+                reference: ``,
             },
             {
                 link: 'about',
+                reference: ``,
             },
             {
                 link: 'facilities',
+                reference: ``,
             },
             {
                 link: 'membership',
+                reference: ``,
             },
             {
                 link: 'testimonials',
+                reference: ``,
             },
             {
-                link: 'blog'
+                link: 'blog',
+                reference: ``,
             }
         ],
         activityCards:[
@@ -190,11 +196,46 @@ let app = new Vue({
         ]
         
     },
+
+    mounted() {
+        let scroll = window.requestAnimationFrame || function(callback){window.setTimeout(callback, 1000/60)};
+        let elementToShow = document.querySelectorAll('.show-on-scroll');
+        function loop(){
+            elementToShow.forEach(element => {
+                if(isElementInViewport(element)){
+                    element.classList.add('is-visible')
+                }else{
+                    element.classList.remove('is-visible');
+                }
+            });
+            scroll(loop);
+        }
+        loop();
+
+        function isElementInViewport(el) {
+            if(typeof jQuery === 'function' && el instanceof jQuery){
+                el = el[0];
+            }
+            var rect = el.getBoundingClientRect();
+            return(
+                (rect.top <= 0 && rect.bottom >=0)
+                ||
+                (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+                ||
+                (rect.top>=0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) 
+            );
+          }
+    },
+
+    
     methods: {
       /* SCROLL TO TOP FUNCTION */
       
       scrollToTop: function(){
-        window.scrollTo(0,0,'smooth')
-      }  
-    },
+        window.scrollTo({top: 0, left: 0, behaviour: 'smooth'})
+      } ,
+    }
+
+
+
 })

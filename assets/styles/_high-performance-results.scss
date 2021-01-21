@@ -6,6 +6,9 @@
 
 .performance-title {
     @include flexCenter(center, center, column);
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 
     h2 {
         color: $textColorWhite;
@@ -17,18 +20,43 @@
     }
 }
 
+.performance-title.is-visible {
+    opacity: 1;
+}
+
 .total-image {
     @include flexCenter(center, center, row);
     flex-wrap: wrap;
-    width: 100%
+    width: 100%;
 }
 
 .high-performance-img {
     @include flexCenter(center, center, row);
     margin: 5.9rem;
     width: calc(100% / 6);
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 
-    img:hover {
-        transform: scale(1.2rem);
+}
+
+.high-performance-img.is-visible {
+    opacity: 1;
+}
+
+.high-performance-img {
+    img {
+        opacity: 1;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.high-performance-img:hover {
+    img {
+        opacity: 0.8;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: all .4s ease-in-out;
     }
 }

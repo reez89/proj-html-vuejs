@@ -12,27 +12,46 @@
         background: transparent;
         outline: none;
         border: 1px solid $textColorGray;
+
+
+        button:hover {
+            cursor: pointer;
+            color: $textColorWhite;
+            border: 1px solid $textColorWhite;
+        }
     }
 
-    button:hover {
-        cursor: pointer;
+    .text-info-goals {
+        @include flexCenter(space-between, right, column);
+        width: 50%;
         color: $textColorWhite;
-        border: 1px solid $textColorWhite;
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    }
+
+    .join-us {
+        @include flexCenter(space-between, center, column);
+        width: 50%;
+        opacity: 0;
+        transition: opacity 0.3s .25s ease-out;
+        will-change: opacity;
+    }
+
+
+    .join-us.is-visible {
+        opacity: 1;
     }
 }
 
 .text-info-goals {
-    @include flexCenter(space-between, right, column);
-    width: 50%;
-    color: $textColorWhite;
-
-    p {
-        font-size: 0.8rem;
-        font-weight: 300;
-    }
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 }
 
-.join-us {
-    @include flexCenter(space-between, center, column);
-    width: 50%;
+.text-info-goals.is-visible {
+    opacity: 1;
 }

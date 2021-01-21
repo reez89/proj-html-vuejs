@@ -5,17 +5,22 @@
     height: 350px;
     padding: 0px;
     background: $backgroundShark;
-
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
 
     h2 {
         color: $textColorWhite;
+        opacity: 0;
+        transition: opacity 0.3s .25s ease-out;
+        will-change: opacity;
     }
 
     img {
         padding: $paddingY_40;
+        opacity: 0;
+        transition: opacity 0.3s .25s ease-out;
+        will-change: opacity;
     }
 
     p {
@@ -23,7 +28,16 @@
         text-align: center;
         line-height: 30px;
         color: $textColorGray;
+        opacity: 0;
+        transition: opacity 0.3s .25s ease-out;
+        will-change: opacity;
     }
+}
+
+h2.is-visible,
+img.is-visible,
+p.is-visible {
+    opacity: 1;
 }
 
 .intermezzo:after {

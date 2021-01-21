@@ -21,13 +21,19 @@
     }
 }
 
-
 .performer-card {
     @include flexCenter(space-evenly, center, column);
     margin: 2rem;
     width: 250px;
     background: $backgroundSharkLight;
     transition: transform .4s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
+}
+
+.performer-card.is-visible {
+    opacity: 1;
 }
 
 .performer-img {

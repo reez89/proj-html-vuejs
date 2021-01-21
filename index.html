@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.3.1/d3.min.js"></script>
         <!-- VUEJS -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <!-- GOOGLE FONTS -->
@@ -25,7 +27,7 @@
                         <nav class="navbar-right">
                             <ul>
                                 <li v-for="link in navLinks">
-                                    <a href="#">{{link.link}}</a> 
+                                    <a :href="link.reference">{{link.link}}</a>
                                 </li>
                             </ul>
                         </nav>
@@ -39,19 +41,19 @@
                 <!-- xxx HEADER -->
                 <!-- INTERMEZZO -->
                 
-                    <div class="intermezzo">
-                        <h2>WORLD CLASS Fitness</h2>
-                        <img src="./assets/img/divider-xx-red.png" alt="">
-                        <p>At Avada gym, everything we do from top to bottom is of the highest quality to ensure we're euquipped to help you reach your goals of a healthy and fit lifestyle.</p>
+                    <div class="intermezzo  ">
+                        <h2 class="show-on-scroll">WORLD CLASS Fitness</h2>
+                        <img class="show-on-scroll" src="./assets/img/divider-xx-red.png" alt="">
+                        <p class="show-on-scroll">At Avada gym, everything we do from top to bottom is of the highest quality to ensure we're euquipped to help you reach your goals of a healthy and fit lifestyle.</p>
                     </div>
                      <!-- xxx INTERMEZZO -->
-                    <!-- SIGN UP SECTION -->
+                    <!-- FORM UP SECTION -->
                     <section id="form-section" >
-                        <div class="main-container">
-                            <div class="img-form">
+                        <div class="form-info main-container">
+                            <div class="img-form show-on-scroll">
                                 <img :src="formImage" alt="ragazza con tenuta sportiva e ragazzo con pesi">
                             </div>
-                            <div class="form-data-info">
+                            <div class="form-data-info show-on-scroll">
                                 <h4>sign up for a free training session!</h4>
                                 <span>name</span>
                                 <input type="text">
@@ -61,12 +63,12 @@
                             </div>
                         </div>
                     </section>
-                     <!-- xxx SIGN UP SECTION -->
+                     <!-- xxx FORM UP SECTION -->
                      <!-- ACTIVITY TYPE SECTION -->
                      <section id="activity-section">
                          <div class="main-container">
-                            <div class="activity-card" v-for="item in activityCards">
-                                <div class="activity-icon">
+                            <div class="activity-card show-on-scroll" v-for="item in activityCards">
+                                <div class="activity-icon show-on-scroll">
                                     <i :class=item.icon></i>
                                 </div>
                                 <div class="activity-title">
@@ -82,13 +84,13 @@
                      <!-- xxx ACTIVITY TYPE SECTION -->
                      <!-- REAL WORLD RESULTS SECTION -->
                      <section id="world-results">
-                         <div class="world-title">
+                         <div class="world-title show-on-scroll">
                              <h2>REAL WORLD RESULTS</h2>
                              <img src="./assets/img/divider-xx-red.png" alt="">
                          </div>
                          <div class="total-cards main-container">
-                             <div class="card-container" v-for="item in worldResults">
-                                 <div class="card-img">
+                             <div class="card-container show-on-scroll" v-for="item in worldResults">
+                                 <div class="card-img ">
                                      <img :src="item.img" alt="">
                                  </div>
                                  <div class="card-info">
@@ -101,14 +103,14 @@
                      <!-- xxx REAL WORLD RESULTS SECTION -->
                      <!-- HIGH PERFORMACE SECTION -->
                      <section id="high-performance-results">
-                         <div class="performance-title">
+                         <div class="performance-title show-on-scroll">
                              <h2>{{highPerformanceTitle}}</h2>
                              <div>
                                  <img :src="divider" alt="">
                              </div>
                          </div>
                          <div class="total-image main-container">
-                            <div class="high-performance-img" v-for="item in highPerformance">
+                            <div class="high-performance-img show-on-scroll" v-for="item in highPerformance">
                                 <img :src="item.img" alt="">
                             </div>
                         </div>
@@ -116,7 +118,7 @@
                      <!-- xxx HIGH PERFORMACE SECTION -->
                      <!-- INTERMEZZO MOTIVATIONAL SECTION -->
                      <section id="intermezzo-motivational">
-                         <div class="motivationl-text">
+                         <div class="motivationl-text show-on-scroll">
                             <h2>{{motivational}}</h2>
                             <img :src="dividerWhite">
                             <p>{{quoteOfTheDay}}</p>
@@ -125,12 +127,12 @@
                      <!-- xxx INTERMEZZO MOTIVATIONAL SECTION -->
                      <!-- MEET OUR TRAINERS SECTION -->
                      <section id="meet-our-trainers">
-                         <div class="trainers-title">
+                         <div class="trainers-title show-on-scroll">
                              <h2>{{trainersTitle}}</h2>
                              <img :src="divider" alt="">
                          </div>
                          <div class="trainers-card main-container">
-                             <div class="trainer-card" v-for="item in trainersCard">
+                             <div class="trainer-card show-on-scroll" v-for="item in trainersCard">
                                  <div class="trainer-img">
                                      <img :src="item.img" alt="">
                                  </div>
@@ -153,12 +155,12 @@
                      <!-- xxx MEET OUR TRAINERS SECTION -->
                      <!-- PERFORMANCE NEWS SECTION -->
                         <section id="performance-news">
-                            <div class="trainers-title">
+                            <div class="trainers-title show-on-scroll">
                                 <h2>{{performersTitle}}</h2>
                                 <img :src="divider" alt="">
                             </div>
                             <div class="performes-card main-container">
-                                <div class="performer-card" v-for="item in performanceCard">
+                                <div class="performer-card show-on-scroll" v-for="item in performanceCard">
                                     <div class="performer-img">
                                         <div class="overlay overlay-left">
                                             <div class="overlay-text">
@@ -184,11 +186,11 @@
                      <!-- ACHIVE YOU GOALS SECTIONS -->
                         <section id="achieve-your-fitness-goals">
                             <div class="info main-container">
-                                <div class="text-info-goals">
+                                <div class="text-info-goals show-on-scroll">
                                     <h2>Achieve your fitness goals</h2>
                                     <p>Flexible membership packages to suit all levels of thlete and achive your fitnes goals</p>
                                 </div>
-                                <div class="join-us">
+                                <div class="join-us show-on-scroll">
                                     <button type="submit">join us</button>
                                 </div>
                             </div>
@@ -197,14 +199,14 @@
                      <!-- FOOTER -->
                      <footer id="footer-top">
                         <div class="footer-info main-container">
-                            <div class="come-find-us" v-for="text in comeFindUs">
+                            <div class="come-find-us show-on-scroll" v-for="text in comeFindUs">
                                 <p>Come find us</p>
                                 <p>{{text.street}}</p>
                                 <p>{{text.state}}</p> 
                                 <p>{{text.phone}}</p> 
                                 <p>{{text.email}}</p>
                             </div> 
-                            <div class="recent-posts" v-for="post in recentPosts">
+                            <div class="recent-posts show-on-scroll" v-for="post in recentPosts">
                                 <p class="recent-title">recent posts</p>
                                 <div class="recent-top">
                                     <p><i class="fas fa-chevron-right"></i>{{post.training}}</p>
@@ -215,20 +217,20 @@
                                 
                                 
                             </div>
-                            <div class="opening-time" v-for="time in openingTimes">
+                            <div class="opening-time show-on-scroll" v-for="time in openingTimes">
                                 <p>onening time</p>
                                 <p>{{time.scheduleOne}}</p>
                                 <p>{{time.hourOne}}</p>
                                 <p>{{time.scheduleTwo}}</p>
                                 <p>{{time.hourTwo}}</p>
                             </div>
-                            <div class="footer-img" v-for="image in footerImg">
+                            <div class="footer-img show-on-scroll" v-for="image in footerImg">
                                 <img :src="image.image" alt="">
                             </div>
                         </div>
                      </footer>
                      <div class="credits">
-                         <div class="credits-container main-container">
+                         <div class="credits-container show-on-scroll main-container">
                             <div class="credits-txt">
                                 <div class="p-right">
                                     <p> &#169; Copyright 2012- 2020</p>

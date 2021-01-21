@@ -12,6 +12,10 @@
 .come-find-us {
     @include flexCenter(center, none, column);
     width: calc(100% / 4);
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
+
 
     p {
         color: $textColorGray;
@@ -33,6 +37,9 @@
     @include flexCenter(none, none, column);
     width: calc(100% / 4);
     height: 144px;
+    opacity: 0;
+    transition: opacity 0.3s .35s ease-out;
+    will-change: opacity;
 
     p {
         color: $textColorGray;
@@ -66,6 +73,9 @@
 .opening-time {
     @include flexCenter(none, none, column);
     width: calc(100% / 4);
+    opacity: 0;
+    transition: opacity 0.3s .45s ease-out;
+    will-change: opacity;
 
     p {
         color: $textColorGray;
@@ -92,4 +102,15 @@
 
 .footer-img {
     width: calc(100% / 4);
+    opacity: 0;
+    transition: opacity 0.3s .55s ease-out;
+    will-change: opacity;
+}
+
+
+.come-find-us.is-visible,
+.recent-posts.is-visible,
+.opening-time.is-visible,
+.footer-img.is-visible {
+    opacity: 1;
 }

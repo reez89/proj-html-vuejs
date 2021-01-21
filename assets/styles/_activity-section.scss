@@ -10,6 +10,20 @@
     position: relative;
     margin-bottom: 1rem;
     cursor: pointer;
+
+    i {
+        opacity: 0;
+        transition: opacity 0.3s 0.8s ease-out;
+        will-change: opacity;
+    }
+}
+
+.activity-icon.is-visible i {
+    opacity: 1 !important;
+}
+
+.activity-card.is-visible {
+    opacity: 1 !important;
 }
 
 .activity-card:hover i {
@@ -24,6 +38,9 @@
     @include flexCenter(center, center, column);
     width: calc(100% / 4);
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s .30s ease-out;
+    will-change: opacity;
 
     i {
         color: $textColorRose;

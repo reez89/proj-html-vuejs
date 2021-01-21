@@ -41,6 +41,9 @@
 .trainers-title {
     text-align: center;
     padding-top: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
 
     h2 {
         text-transform: uppercase;
@@ -58,6 +61,14 @@
     width: 250px;
     background: $backgroundShark;
     transition: transform .4s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s .25s ease-out;
+    will-change: opacity;
+}
+
+.trainers-title.is-visible,
+.trainer-card.is-visible {
+    opacity: 1;
 }
 
 .trainer-img {
