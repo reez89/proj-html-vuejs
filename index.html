@@ -153,6 +153,12 @@
                             <div class="performes-card main-container">
                                 <div class="performer-card" v-for="item in performanceCard">
                                     <div class="performer-img">
+                                        <div class="overlay overlay-left">
+                                            <div class="overlay-text">
+                                                <i class="fas fa-link"></i>
+                                                <i class="fas fa-search"></i>
+                                             </div>
+                                        </div>
                                         <img :src="item.img" alt="">
                                     </div>
                                     <div class="perform-info">
@@ -218,7 +224,7 @@
                          <div class="credits-container main-container">
                             <div class="credits-txt">
                                 <div class="p-right">
-                                    <p>Copyright 2012- 2020</p>
+                                    <p> &#169; Copyright 2012- 2020</p>
                                 </div>
                                 <div class="border">
                                     <p> avada theme by theme fusion</p>
@@ -236,8 +242,11 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                          </div>
+                         <button @click="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
                      </div>
                      <!-- xxx FOOTER -->
+
+
                      
 
       

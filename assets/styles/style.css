@@ -476,6 +476,11 @@ nav {
   width: calc(100% / 6);
 }
 
+.high-performance-img img:hover {
+  -webkit-transform: scale(1.2rem);
+          transform: scale(1.2rem);
+}
+
 #intermezzo-motivational {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,10 +614,30 @@ nav {
   margin: 2rem;
   width: 250px;
   background: #252a2d;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
 }
 
 .trainer-img img {
   width: 250px;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.trainer-img:hover img {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
 }
 
 .trainer-info {
@@ -695,10 +720,66 @@ nav {
   margin: 2rem;
   width: 250px;
   background: #212425;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.performer-img {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  position: relative;
 }
 
 .performer-img img {
   width: 250px;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 0;
+  background: #d5625f;
+}
+
+.performer-card:hover .overlay {
+  opacity: 0.9;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.overlay-text i {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+
+.overlay-left {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.performer-card:hover .overlay-left {
+  width: 100%;
 }
 
 #achieve-your-fitness-goals {
@@ -929,6 +1010,7 @@ nav {
 }
 
 .credits {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,6 +1027,25 @@ nav {
   width: 100vw;
   height: 100px;
   background: #070809;
+}
+
+.credits button {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  background: #212425;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.credits button i {
+  color: white;
+}
+
+.credits button:hover {
+  cursor: pointer;
 }
 
 .credits-txt,

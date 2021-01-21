@@ -1,8 +1,28 @@
 .credits {
+    position: relative;
     @include flexCenter(space-between, center, column);
     width: 100vw;
     height: 100px;
     background: #070809;
+
+    button {
+        i {
+            color: $textColorWhite;
+        }
+
+        position: absolute;
+        bottom:0;
+        right: 50px;
+        background: $backgroundSharkLight;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
 }
 
 .credits-txt,

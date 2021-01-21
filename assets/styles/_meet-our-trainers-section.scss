@@ -57,11 +57,22 @@
     margin: 2rem;
     width: 250px;
     background: $backgroundShark;
+    transition: transform .4s ease-in-out;
 }
 
 .trainer-img {
     img {
         width: 250px;
+        transition: transform .4s ease-in-out;
+    }
+}
+
+.trainer-img:hover {
+    img {
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: transform .4s ease-in-out;
     }
 }
 

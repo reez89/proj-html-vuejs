@@ -185,5 +185,12 @@ let app = new Vue({
             }
         ]
         
-    }
+    },
+    methods: {
+      /* SCROLL TO TOP FUNCTION */
+      
+      scrollToTop: function(){
+        window.scrollTo(0,0,'smooth')
+      }  
+    },
 })
