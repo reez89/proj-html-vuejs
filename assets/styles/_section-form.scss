@@ -3,7 +3,7 @@
     width: 100vw;
     height: 400px;
     background: $backgroundSharkLight;
-
+    flex-wrap: nowrap;
     .img-form {
         overflow: hidden;
         opacity: 0;
